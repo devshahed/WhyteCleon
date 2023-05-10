@@ -1,0 +1,113 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --primary: #e82583;
+    --primary-black: #000000;
+    --nav-link: #272727;
+}
+
+body {
+    font-family: "Popins", sans-serif;
+    background: #ffffff;
+}
+
+nav {
+    padding: 1rem 0;
+}
+.logo img {
+    max-width: 130px;
+}
+nav ul {
+    gap: 1.8rem;
+}
+.nav-link,
+.header-phone-number,
+.why-whytecleon {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--nav-link);
+    transition: 0.3s ease-in-out;
+    padding: 0.3rem 0.9rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+.nav-link:hover {
+    border: 1px solid var(--primary);
+}
+.nav-link.active {
+    border: 1px solid var(--primary);
+}
+.header-phone-number {
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+.why-whytecleon {
+    background: var(--primary);
+    color: #ffffff;
+    gap: 0.2rem;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    margin-right: -1rem;
+}
+.country-flag {
+    gap: 0.3rem;
+}
+.flag {
+    max-width: 2rem;
+}
+.flag-changer {
+    max-width: 1.5rem;
+}
+.employee-top {
+    background-image: url("../images/employee-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    padding: 1.5rem 2rem;
+}
+.banner-overlay {
+    z-index: inherit;
+    position: absolute;
+    background: linear-gradient(
+        90deg,
+        #e82583ee 0%,
+        #e82583cb 20%,
+        #f7f7f7ed 100%
+    );
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.employee-photo img {
+    max-width: 20rem;
+}
+.employee-info h1 {
+    color: #ffffff;
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.employee-info h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.employee-info {
+    gap: 0.4rem;
+}
+.employee-info .social-links {
+    gap: 0.5rem;
+}
+.employee-photo {
+    height: 20rem;
+    width: 20rem;
+}
+.employee-photo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2.5rem;
+    object-fit: cover;
+}
