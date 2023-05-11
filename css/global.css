@@ -67,3 +67,6 @@ a {
 .text-align-center {
     text-align: center;
 }
+.d-block {
+    display: block;
+}

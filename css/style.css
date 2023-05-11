@@ -3,8 +3,12 @@
 
 :root {
     --primary: #e82583;
-    --primary-black: #000000;
+    --black: #000000;
+    --secondary: #262626;
     --nav-link: #272727;
+    --light-dark: #262932;
+    --gray: #606060;
+    --light-gray: #666666;
 }
 
 body {
@@ -12,6 +16,14 @@ body {
     background: #ffffff;
 }
 
+/* Section */
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* Header part */
 nav {
     padding: 1rem 0;
 }
@@ -58,6 +70,8 @@ nav ul {
 .flag-changer {
     max-width: 1.5rem;
 }
+
+/* Employee page */
 .employee-top {
     background-image: url("../images/employee-banner.png");
     background-repeat: no-repeat;
@@ -102,4 +116,121 @@ nav ul {
 .employee-photo img {
     border-radius: 2.5rem;
     object-fit: cover;
+}
+
+/* Headings */
+.top-heading {
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1234rem;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+.top-heading::after {
+    content: "";
+    width: 4rem;
+    height: 0.13rem;
+    background: var(--primary);
+}
+.heading {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+}
+.heading span:nth-child(1) {
+    color: var(--secondary);
+}
+.heading span:nth-child(2) {
+    color: var(--primary);
+}
+.sub-heading {
+    color: var(--light-dark);
+    padding-bottom: 0.5rem;
+}
+/* Paragraph */
+.paragraph {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+/* Footer */
+footer {
+    padding: 3rem 0;
+}
+.footer-grid,
+.left,
+.right,
+.left-top {
+    gap: 2rem;
+}
+.footer-map img {
+    width: 100%;
+}
+.about-whytecleon,
+.left {
+    flex: 2;
+}
+.right,
+.navigation,
+.find-us {
+    flex: 1;
+}
+.about-whytecleon img {
+    max-width: 13rem;
+}
+.about-whytecleon p span {
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+.about-whytecleon p a {
+    color: var(--gray);
+    font-weight: 700;
+    font-size: 0.85;
+    margin: 0.5rem 0;
+}
+footer ul {
+    gap: 1rem;
+}
+footer ul li a {
+    color: var(--light-gray);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.footer-heading {
+    color: var(--light-dark);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1.5rem 0;
+}
+.insta-post {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.insta-post img {
+    max-width: 7rem;
+    max-height: 7rem;
+    object-fit: cover;
+}
+.contact-info {
+    gap: 1rem;
+}
+.contact-info div {
+    gap: 0.2rem;
+}
+.contact-info img {
+    margin-top: 0.4rem;
+    margin-right: 0.4rem;
+}
+.line {
+    padding: 1rem 0;
+}
+.copyright {
+    color: var(--gray);
+    font-size: 0.84rem;
 }
