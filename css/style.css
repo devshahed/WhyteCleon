@@ -1,5 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
     --primary: #e82583;
@@ -178,7 +179,8 @@ nav ul {
 
 /* Footer */
 footer {
-    padding: 3rem 0;
+    padding-bottom: 3rem;
+    padding-top: 6rem;
 }
 .footer-grid,
 .left,
@@ -318,7 +320,7 @@ footer ul li a:hover {
     font-weight: 600;
     transform: translate(20%, -50%);
 }
-.blog img{
+.blog img, .blog iframe{
     width: 100%;
     height: 50%;
     object-fit: cover;
@@ -358,7 +360,38 @@ footer ul li a:hover {
 .pager{
     background: #F7F7F7;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
+.pager a{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #ADADAD;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.pager a.active{
+    background: var(--primary);
+    color: #ffffff;
+}
+.pager a:hover{
+    background: var(--primary);
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+.pager img{
+    cursor: pointer;
+}
+
+/* Blog video */
