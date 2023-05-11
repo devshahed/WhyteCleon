@@ -39,13 +39,13 @@ nav ul {
     font-size: 1rem;
     font-weight: 600;
     color: var(--nav-link);
-    transition: 0.3s ease-in-out;
     padding: 0.3rem 0.9rem;
     border-radius: 2rem;
     border: 1px solid transparent;
 }
 .nav-link:hover {
     border: 1px solid var(--primary);
+    transition: 0.3s ease-in-out;
 }
 .nav-link.active {
     border: 1px solid var(--primary);
@@ -83,17 +83,44 @@ nav ul {
     position: absolute;
     background: linear-gradient(
         90deg,
-        #e82583ee 0%,
-        #e82583cb 20%,
-        #f7f7f7ed 100%
+        #e82583e1 0%,
+        #e82583b6 40%,
+        #f7f7f7a8 100%
     );
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
 }
+.employee-photo {
+    height: 20rem;
+    width: 20rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2.5rem;
+}
 .employee-photo img {
+    object-fit: cover;
     max-width: 20rem;
+    border-radius: 2.5rem;
+}
+.employee-photo::after {
+    content: "";
+    position: absolute;
+    background: #72726d;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    transform: rotate(45deg) translate(0, -95%);
+}
+.employee-photo::before {
+    content: "";
+    position: absolute;
+    background: #72726d;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    transform: rotate(135deg) translate(0, -110%);
 }
 .employee-info h1 {
     font-size: 5rem;
@@ -108,14 +135,6 @@ nav ul {
 }
 .employee-info .social-links {
     gap: 0.5rem;
-}
-.employee-photo {
-    height: 20rem;
-    width: 20rem;
-}
-.employee-photo img {
-    border-radius: 2.5rem;
-    object-fit: cover;
 }
 
 /* Headings */
@@ -194,6 +213,10 @@ footer {
     font-size: 0.85;
     margin: 0.5rem 0;
 }
+.about-whytecleon p a:hover {
+    transition: 0.3s ease-in-out;
+    color: var(--primary);
+}
 footer ul {
     gap: 1rem;
 }
@@ -201,6 +224,10 @@ footer ul li a {
     color: var(--light-gray);
     font-size: 0.85rem;
     font-weight: 700;
+}
+footer ul li a:hover {
+    color: var(--primary);
+    transition: 0.3s ease-in-out;
 }
 .footer-heading {
     color: var(--light-dark);
@@ -233,4 +260,96 @@ footer ul li a {
 .copyright {
     color: var(--gray);
     font-size: 0.84rem;
+}
+
+/* Our blog page */
+.our-blog {
+    background: url("../images/blog-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 23rem;
+}
+.our-blog-heading {
+    color: var(--secondary);
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+.blog-categories ul {
+    gap: 3rem;
+    color: var(--gray);
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+.blog-categories ul::after {
+    content: "";
+    position: absolute;
+    background: var(--primary);
+    height: 0.2rem;
+    border-radius: 1.2rem;
+    width: 4rem;
+    bottom: 0;
+}
+.blog-categories hr {
+    border: 1px solid #c1c1c1;
+    margin-top: 0.03rem;
+}
+.blogs{
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+.blog{
+    width: 25%;
+    gap: 1rem;
+    position: relative;
+    padding: 1.5rem;
+}
+.blog::after{
+    content: 'Category';
+    position: absolute;
+    background: var(--primary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-size: 0.67rem;
+    font-weight: 600;
+    transform: translate(20%, -50%);
+}
+.blog img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.blog-info{
+    gap: 1.5rem;
+}
+.date img, .author img{
+    width: 1rem;
+}
+.date span,
+.author span {
+    color: #474C52;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.date, .author{
+    gap: 0.4rem;
+}
+.blog-detail h3{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gray);
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+.blog-detail p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray);
+    text-align: justify;
+    line-height: 1.5rem;
 }
