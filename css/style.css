@@ -437,7 +437,6 @@ footer ul li a:hover {
 #contact-us .section-top p {
     padding: 1rem 0;
     text-align: center;
-    width: 50%;
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
@@ -494,28 +493,28 @@ footer ul li a:hover {
     cursor: pointer;
     margin-top: 1rem;
 }
-.contact-info {
+.more-contact-info {
     flex-wrap: wrap;
     margin-top: -7rem;
 }
-.contact-info div {
+.more-contact-info div {
     width: 30%;
     gap: 1rem;
 }
-.contact-info img {
+.more-contact-info div > img {
     border: 1px dashed var(--gray);
 }
-.contact-info h4 {
+.more-contact-info h4 {
     color: #183b56;
     font-size: 1rem;
     font-weight: 600;
 }
-.contact-info p {
+.more-contact-info p {
     color: var(--gray);
     font-size: 1rem;
     font-weight: 400;
 }
-.contact-info a {
+.more-contact-info a {
     color: var(--primary);
     font-weight: 700;
     font-size: 1rem;
@@ -524,4 +523,33 @@ footer ul li a:hover {
     border: 2px solid var(--primary);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
+}
+.find-us-on-map {
+    padding-top: 3rem;
+}
+.find-us-on-map .map {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+/* oval */
+.oval {
+    position: absolute;
+    left: 0;
+    height: 80%;
+}
+.oval-inverse {
+    position: absolute;
+    height: 80%;
+    right: 0;
+    rotate: 180deg;
+}
+
+.pin:nth-child(1) {
+    top: 25%;
+    left: 25%;
+}
+.pin:nth-child(2) {
+    bottom: 0%;
+    right: 10%;
 }
