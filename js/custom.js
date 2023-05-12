@@ -1,12 +1,21 @@
-$(".owl-carousel").owlCarousel({
+$(document).ready(function () {
+    $(".crsl").slick({
+        autoplay: true,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        useTransform: false,
+    });
+});
+
+$(".rl-slider").owlCarousel({
     loop: true,
     nav: false,
     dots: false,
     margin: 20,
     autoplay: true,
-    slideTransition: "linear",
-    autoplayTimout: 10000,
-    autoplaySpeed: 10000,
+    autoplayTimout: 1000,
+    autoplaySpeed: 1000,
     autoplayHoverPause: true,
     responsive: {
         0: {

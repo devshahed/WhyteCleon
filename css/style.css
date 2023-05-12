@@ -24,6 +24,22 @@ section {
     gap: 4rem;
 }
 
+/* Primary button */
+.btn-primary {
+    font-weight: 600;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    background: var(--primary);
+    gap: 0.2rem;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    width: fit-content;
+}
+.btn-primary span {
+    color: #ffff;
+}
+
 /* Header part */
 nav {
     padding: 1rem 0;
@@ -626,12 +642,13 @@ footer ul li a:hover {
 /* Service page */
 .service-slider {
     height: 18rem;
-    display: grid;
+    display: grid !important;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
+    margin: 0 1rem;
 }
-.service-slider .item {
+.item {
     background: linear-gradient(#c20661a2, #c20661a2),
         url("../images/service-banner.png");
     background-size: cover;
@@ -702,3 +719,23 @@ footer ul li a:hover {
 .sb-heading {
     padding: 4rem 0 2rem 0;
 }
+.rl-slider {
+    background: url("../images/service-bottom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
+    position: relative;
+}
+.rl-slider::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #e82583;
+    mix-blend-mode: overlay;
+    z-index: -1;
+}
+
+/* Management page */
