@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="./css/global.css" />
         <link rel="stylesheet" href="./css/style.css" />
-        <title>Blog</title>
+        <title>Title</title>
     </head>
     <body>
         <header class="container-big">
@@ -58,74 +58,94 @@
             </nav>
         </header>
         <main>
-            <section>
-                <div
-                    class="our-blog background-no-repeat background-position-center background-size-cover section-top position-relative"
-                >
-                    <div class="banner-overlay"></div>
-                    <h1
-                        class="text-align-center our-blog-heading position-relative"
-                    >
-                        OUR BLOG
-                    </h1>
+            <section id="contact-us">
+                <div class="section-top">
+                    <h2 class="white-heading">Contact Us</h2>
+                    <p>
+                        If you need our help, have questions about how to use
+                        the platform or are experiencing technical difficulties,
+                        please do not hesitate to contact us.
+                    </p>
+                    <img
+                        src="./assets/wave.svg"
+                        alt=""
+                        class="wave position-absolute"
+                    />
                 </div>
                 <div class="container">
-                    <h4 class="top-heading">OUR BLOG</h4>
-                    <h2 class="heading">
-                        <span>From</span><span>Cleon Space</span>
-                    </h2>
-                    <div class="blog-categories">
-                        <ul class="list-style-none d-flex align-items-center">
-                            <li>
-                                <a class="active" href="#">Articles</a>
-                            </li>
-                            <li>
-                                <a href="#">Videos</a>
-                            </li>
-                            <li>
-                                <a href="#">Skits</a>
-                            </li>
-                        </ul>
-                        <hr />
-                    </div>
-                    <div class="blogs d-flex justify-content-space-between">
-                        <div class="blog d-flex flex-direction-column">
-                            <img src="./images/blog-image.png" alt="" />
-                            <div class="blog-info">
-                                <div class="blog-info-data">
-                                    <img src="./icons/note-text.svg" alt="" />
-                                    <span>July 23, 2022 Admin</span>
-                                </div>
-                                <div class="blog-info-data">
-                                    <img src="./icons/user.svg" alt="" />
-                                    <span>By Admin</span>
-                                </div>
+                    <form id="contact-form" action="#" method="POST">
+                        <div class="input-group d-flex align-items-center">
+                            <div
+                                class="input-box d-flex flex-direction-column w-100"
+                            >
+                                <label for="name">Your name*</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    required
+                                    placeholder="Julia William"
+                                />
                             </div>
-                            <div class="blog-detail">
-                                <h3>
-                                    BONDING SESSION (MOVIE NIGHT) – WAKANDA
-                                    FOREVER
-                                </h3>
-                                <p>
-                                    Movie night with colleagues and a few
-                                    friends of Whyte Cleon
-                                </p>
+                            <div
+                                class="input-box d-flex flex-direction-column w-100"
+                            >
+                                <label for="email">Contact email*</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    required
+                                    placeholder="you@example.com"
+                                />
                             </div>
                         </div>
-                    </div>
-                    <div
-                        class="d-flex justify-content-center align-items-center"
-                    >
-                        <div class="pager">
-                            <img src="./icons/next-page.svg" alt="" />
-                            <a href="#" class="active">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <img src="./icons/prev-page.svg" alt="" />
+                        <div class="input-group d-flex align-items-center">
+                            <div
+                                class="input-box d-flex flex-direction-column w-100"
+                            >
+                                <label for="company">Company name*</label>
+                                <input
+                                    type="text"
+                                    name="company"
+                                    id="company"
+                                    required
+                                    placeholder="Company name"
+                                />
+                            </div>
+                            <div
+                                class="input-box d-flex flex-direction-column w-100"
+                            >
+                                <label for="request">Your request*</label>
+                                <select name="request" id="request" required>
+                                    <option value="0" selected disabled>
+                                        Request for proposal
+                                    </option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
+                        <div class="input-group d-flex align-items-center">
+                            <div
+                                class="input-box d-flex flex-direction-column w-100"
+                            >
+                                <label for="message">Your message*</label>
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    rows="5"
+                                    required
+                                    placeholder="Type your message…."
+                                ></textarea>
+                            </div>
+                        </div>
+                        <p>
+                            By submitting this form you agree to our terms and
+                            conditions and our Privacy Policy which explains how
+                            we may collect, use and disclose your personal
+                            information including to third parties.
+                        </p>
+                        <input type="submit" value="Submit" />
+                    </form>
                 </div>
             </section>
         </main>
