@@ -83,7 +83,7 @@ nav ul {
         90deg,
         #e82583e1 0%,
         #e82583b6 40%,
-        #f7f7f7a8 100%
+        #f8aad093 100%
     );
     left: 0;
     top: 0;
@@ -536,11 +536,11 @@ footer ul li a:hover {
 .oval {
     position: absolute;
     left: 0;
-    height: 80%;
+    height: 100%;
 }
 .oval-inverse {
     position: absolute;
-    height: 80%;
+    height: 100%;
     right: 0;
     rotate: 180deg;
 }
@@ -552,4 +552,69 @@ footer ul li a:hover {
 .pin:nth-child(2) {
     bottom: 0%;
     right: 10%;
+}
+
+/* Why whytecleon page */
+#why-whytecleon .section-top {
+    background: url("../images/why-white-cleon.png");
+}
+#why-whytecleon .white-heading {
+    text-align: center;
+    padding-top: 3rem;
+}
+.wwc-card {
+    width: 30%;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 19.6547px 46.329px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.wwc-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 0;
+    color: #222222;
+}
+.wwc-card p {
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* Volume */
+.volume {
+    height: 0.3rem;
+    border-radius: 1rem;
+    width: 5rem;
+    background: #fdafd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.volume::after {
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+    background: var(--primary);
+}
+#why-whytecleon .heading {
+    padding: 3rem 0;
+}
+.reviews {
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.r-img-box {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 1rem;
+    background: var(--primary);
+    margin-bottom: 1rem;
+}
+.wwc-card h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary);
 }
