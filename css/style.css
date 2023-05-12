@@ -476,3 +476,52 @@ footer ul li a:hover {
     font-weight: 400;
     font-size: 1rem;
 }
+#contact-form label {
+    padding-bottom: 0.5rem;
+}
+#contact-form .paragraph {
+    color: var(--gray);
+    padding-bottom: 0.6rem;
+}
+#contact-form input[type="submit"] {
+    background: var(--primary);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 0.7rem 2rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.contact-info {
+    flex-wrap: wrap;
+    margin-top: -7rem;
+}
+.contact-info div {
+    width: 30%;
+    gap: 1rem;
+}
+.contact-info img {
+    border: 1px dashed var(--gray);
+}
+.contact-info h4 {
+    color: #183b56;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.contact-info p {
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.contact-info a {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1rem;
+}
+#support-center-btn {
+    border: 2px solid var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
