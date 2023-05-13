@@ -686,6 +686,16 @@ footer ul li a:hover {
 .service-item img {
     object-fit: cover;
 }
+.outline-right ~ .watermark {
+    top: 110%;
+}
+.watermark {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    padding-left: 3rem;
+    top: 60%;
+}
 .service-overlay {
     background: linear-gradient(
         326.36deg,
@@ -712,6 +722,7 @@ footer ul li a:hover {
     border-top-right-radius: 15rem;
     border-bottom-left-radius: 15rem;
     border: 4px solid var(--primary);
+    background: #ffffff;
 }
 .outline-right {
     transform: translateY(50%);
