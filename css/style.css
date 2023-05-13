@@ -739,3 +739,50 @@ footer ul li a:hover {
 }
 
 /* Management page */
+.employee-box {
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.employee-box > img {
+    border-radius: 2rem;
+    width: 50%;
+    background: #565756;
+}
+.employee-box .info {
+    width: 50%;
+}
+.employee-box .info > span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary);
+}
+.employee-box .info > p {
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    padding: 0 2rem;
+    margin: 1rem 0;
+}
+.employee-box .info > p::after {
+    content: "";
+    background: #3b2f4a;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0.1rem;
+    border-radius: 1rem;
+}
+.employee-box .links img {
+    margin: 1rem 0.5rem 1rem 0;
+}
+.bio-btn {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary);
+    border: 3px solid var(--primary);
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    display: inline-block;
+}
