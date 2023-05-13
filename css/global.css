@@ -70,6 +70,9 @@ a {
 .d-block {
     display: block;
 }
+.d-none {
+    display: none;
+}
 .background-position-center {
     background-position: center !important;
 }

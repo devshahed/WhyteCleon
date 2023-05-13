@@ -648,7 +648,7 @@ footer ul li a:hover {
     grid-gap: 1rem;
     margin: 0 1rem;
 }
-.item {
+.service-slider .item {
     background: linear-gradient(#c20661a2, #c20661a2),
         url("../images/service-banner.png");
     background-size: cover;
@@ -739,6 +739,46 @@ footer ul li a:hover {
 }
 
 /* Management page */
+.vertical-slider {
+    display: flex !important;
+    gap: 2rem;
+}
+.v-item {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+.wave-bg {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+.v-item .paragraph {
+    color: var(--gray);
+    padding-bottom: 1rem;
+}
+.slick-dots {
+    position: unset !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 0.5rem;
+    width: unset !important;
+}
+.slick-dots li button:before {
+    border-radius: 50%;
+    width: 0.7rem !important;
+    height: 0.7rem !important;
+    background-color: var(--primary);
+}
+.slick-dots li {
+    margin: 0 !important;
+}
+.v-item > div {
+    width: 50%;
+}
 .employee-box {
     gap: 2rem;
     padding: 2rem 0;
@@ -785,4 +825,42 @@ footer ul li a:hover {
     border-radius: 0.5rem;
     padding: 1rem 3rem;
     display: inline-block;
+}
+
+/* The Board Page */
+.board-slider {
+    margin: 2rem;
+}
+.board-slider .item img {
+    background: linear-gradient(0deg, #ffffff 0.03%, #e2e2e2 100%);
+    border-radius: 0.5rem;
+}
+.board-slider .item > div {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+.board-slider h3 {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.board-slider span {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.board-slider .owl-item {
+    padding: 2rem;
+    opacity: 0.5;
+}
+.board-slider .owl-item.center {
+    transition: 1s ease-in-out;
+    opacity: 1;
+    padding: 0;
+}
+.board-slider .owl-item.center .item > div {
+    display: block;
 }
