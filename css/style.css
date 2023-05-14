@@ -270,7 +270,8 @@ footer ul li a:hover {
     flex-wrap: wrap;
     gap: 1rem;
 }
-.insta-post img {
+.insta-post img,
+.insta-post iframe {
     max-width: 7rem;
     max-height: 7rem;
     object-fit: cover;
@@ -646,13 +647,11 @@ footer ul li a:hover {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
-    margin: 0 1rem;
+    margin-right: 1rem;
 }
 .service-slider .item {
-    background: linear-gradient(#c20661a2, #c20661a2),
-        url("../images/service-banner.png");
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #930047;
+    position: relative;
     width: 100%;
     border-radius: 2rem;
     padding: 1rem;
@@ -660,6 +659,7 @@ footer ul li a:hover {
     font-weight: 600;
     font-size: 0.9rem;
 }
+
 .vertical {
     grid-row-end: span 2;
 }
@@ -842,6 +842,9 @@ footer ul li a:hover {
 .board-slider {
     margin: 2rem;
 }
+.board-box {
+    height: 100vh;
+}
 .board-slider .item img {
     background: linear-gradient(0deg, #ffffff 0.03%, #e2e2e2 100%);
     border-radius: 0.5rem;
@@ -874,4 +877,14 @@ footer ul li a:hover {
 }
 .board-slider .owl-item.center .item > div {
     display: block;
+}
+
+/* About page */
+#about .container > p {
+    color: var(--gray);
+}
+.about-top > div > img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
 }
