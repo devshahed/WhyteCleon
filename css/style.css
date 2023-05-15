@@ -965,6 +965,10 @@ footer ul li a:hover {
 .journey-img-box {
     flex: 1;
 }
+.journey-img-box img {
+    height: 100%;
+    object-fit: cover;
+}
 .journey-text-box span {
     color: var(--secondary);
     font-size: 1rem;
