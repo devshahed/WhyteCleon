@@ -91,3 +91,6 @@ a {
 .flex-direction-reverse-column {
     flex-direction: column-reverse;
 }
+.text-align-end{
+    text-align: end;
+}

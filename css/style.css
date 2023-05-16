@@ -1,6 +1,8 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @font-face {
     font-family: "Adelia";
     src: url("../fonts/adelia.ttf") format("truetype");
@@ -28,7 +30,20 @@ section {
     gap: 4rem;
 }
 
-/* Primary button */
+/* Buttons */
+.btn-secondary {
+    font-weight: 400;
+    color: var(--black);
+    border-radius: 0.5rem;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    align-items: center;
+    background: #ffffff;
+    gap: 0.2rem;
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+    width: fit-content;
+}
 .btn-primary {
     font-weight: 600;
     color: #ffffff;
@@ -1162,4 +1177,224 @@ footer ul li a:hover {
 }
 .job-content > div {
     gap: 1rem;
+}
+
+/* Home page */
+#home .blogs {
+    padding-top: 0;
+}
+.newsletter {
+    background: url("../images/newsletter-bg.png"),
+        linear-gradient(95.75deg, #e82583 0%, rgba(232, 37, 131, 0.43) 101.82%);
+    background-blend-mode: multiply;
+    padding: 5rem 3rem;
+    border-radius: 1rem;
+}
+.newsletter-input-box {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    padding: 1rem 0;
+}
+.newsletter-input-box input {
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 3rem;
+    width: 100%;
+    font-size: 1rem;
+}
+.newsletter-input-box input::placeholder {
+    color: var(--gray);
+}
+.newsletter-input-box a {
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    padding: 1rem;
+    margin-right: 0.5rem;
+}
+.assessment {
+    gap: 2rem;
+    border: 2px solid var(--primary);
+    border-radius: 2rem;
+    padding: 2rem 4rem;
+    background: #ffffff;
+    margin: 4rem 0;
+}
+.assessment > div > h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.assessment > div > p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+.assessment > div > a {
+    border: 1px solid #006064;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    gap: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color: rgba(232, 37, 131, 0.62);
+}
+.review {
+    background: rgba(232, 37, 131, 0.11);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3rem 3rem 3rem 0;
+    padding: 1.5rem;
+}
+.review p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2e3e5c;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+.testimonial-content {
+    margin: 1rem;
+}
+.reviewer-box {
+    padding: 1.5rem 0;
+    gap: 1rem;
+    justify-content: end;
+    flex-direction: row-reverse;
+}
+.reviewer-box img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.reviewer-box > div > h5 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--black);
+    padding-bottom: 0.2rem;
+}
+.reviewer-box > div > p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.testimonial-right {
+    padding: 2rem 4rem;
+}
+.testimonial-right h4 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--primary);
+}
+.hr-right h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color: #000000de;
+}
+.hr-right p {
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+}
+.hr-expertise .btn-primary {
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+.hr-btn-box {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+.hr-expertise > div {
+    flex: 1;
+}
+.hr-expertise .paragraph {
+    color: var(--gray);
+}
+.counters{
+    gap: 2rem;
+}
+.global{
+    gap: 2rem;
+}
+.counter h6{
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+.counter span{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.platforms-work-with h2{
+    font-weight: 600;
+    font-size: 2rem;
+    color: #1E1F4B;
+    text-align: center;
+}
+.platforms-work-with > div{
+    gap: 3rem;
+    padding: 2rem 0;
+}
+.active-solution{
+    background: linear-gradient(143.6deg, #E82583 -15.17%, rgba(232, 37, 131, 0.59) 122.54%);
+}
+.active-solution h4, .active-solution p{
+    color: #ffffff;
+}
+.wdbpcs h2{
+    color: var(--light-dark);
+    font-weight: 600;
+    font-size: 2rem;
+}
+.wdbpcs .paragraph{
+    color: var(--gray);
+}
+.wdbpcs {
+    gap: 2rem;
+    padding: 2rem 0;
+
+}
+.wdbpcs > h2, .wdbpcs > p{
+    flex: 1;
+}
+#nigeria-map {
+    stroke: var(--primary);
+    fill: rgba(169, 228, 255, 0.26);
+    
+}
+#nigeria-map path:hover {
+    fill: var(--primary);
+}
+
+/* Blur drop */
+.blur-drop-left {
+    background: rgba(232, 37, 131, 0.5);
+    opacity: 0.7;
+    filter: blur(175.5px);
+    height: 30rem;
+    width: 30rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, 0);
+    z-index: -1;
+}
+.blur-drop-right {
+    background: rgba(232, 37, 131, 0.5);
+    opacity: 0.7;
+    filter: blur(175.5px);
+    height: 30rem;
+    width: 30rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+    z-index: -1;
 }
