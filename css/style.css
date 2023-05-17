@@ -157,11 +157,11 @@ nav ul {
     transform: rotate(135deg) translate(0, -110%);
 }
 .employee-info h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 .employee-info h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 .employee-info {
@@ -198,7 +198,7 @@ nav ul {
     background: var(--primary);
 }
 .heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     padding: 0.5rem 0;
 }
@@ -236,6 +236,10 @@ footer {
 .right,
 .left-top {
     gap: 1.2rem;
+}
+footer .middle {
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 .left-top > div:not(.about-whytecleon) {
     flex: 1;
@@ -304,8 +308,8 @@ footer ul li a:hover {
 .embeded-post img,
 .embeded-post iframe,
 .embeded-post blockquote {
-    max-width: 5rem;
-    max-height: 5rem;
+    width: 6rem;
+    height: auto;
     object-fit: cover;
 }
 .contact-info {
@@ -340,7 +344,7 @@ footer ul li a:hover {
 .categories ul {
     gap: 3rem;
     color: var(--gray);
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 500;
     padding-bottom: 0.5rem;
 }
@@ -431,6 +435,7 @@ footer ul li a:hover {
     display: flex;
     align-items: center;
     gap: 2rem;
+    margin: 1rem;
 }
 .pager a {
     font-family: "Lato", sans-serif;
@@ -477,7 +482,7 @@ footer ul li a:hover {
     font-size: 2rem;
     font-weight: 600;
     color: var(--light-dark);
-    margin-top: 3rem;
+    margin-top: 8rem;
 }
 
 /* Contact us page */
@@ -547,6 +552,7 @@ footer ul li a:hover {
 .more-contact-info {
     flex-wrap: wrap;
     margin-top: -7rem;
+    margin-bottom: 5rem;
 }
 .more-contact-info div {
     width: 30%;
@@ -581,6 +587,7 @@ footer ul li a:hover {
 .find-us-on-map .map {
     width: 100%;
     padding-top: 1rem;
+    border-radius: 2rem;
 }
 
 /* oval */
@@ -612,6 +619,9 @@ footer ul li a:hover {
 #why-whytecleon .white-heading {
     text-align: center;
     padding-top: 3rem;
+}
+.ecp {
+    margin-bottom: 8rem;
 }
 .wwc-card {
     flex: 1;
@@ -657,17 +667,29 @@ footer ul li a:hover {
 #why-whytecleon .heading {
     padding: 3rem 0;
 }
+.innovative {
+    padding: 5rem 0;
+}
+.ftw {
+    margin-top: 5rem;
+}
 .reviews {
     gap: 2rem;
     flex-wrap: wrap;
+    margin-bottom: 8rem;
+}
+.reviews .wwc-card {
+    height: 20rem;
+    min-width: 20rem;
+    max-width: 20rem;
 }
 .r-img-box {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
     padding: 1rem;
     background: var(--primary);
     margin: 0 auto 1rem auto;
@@ -697,7 +719,9 @@ footer ul li a:hover {
     font-weight: 600;
     font-size: 0.9rem;
 }
-
+.logos img {
+    height: 5rem;
+}
 .vertical {
     grid-row-end: span 2;
     display: flex;
@@ -758,7 +782,7 @@ footer ul li a:hover {
     padding: 0 1.5rem 1.5rem 0;
     width: 50%;
     text-align: end;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 .outline {
     border-top-right-radius: 15rem;
@@ -795,6 +819,7 @@ footer ul li a:hover {
 .vertical-slider {
     display: flex !important;
     gap: 2rem;
+    padding-bottom: 6rem;
 }
 .v-item {
     display: flex !important;
@@ -845,13 +870,13 @@ footer ul li a:hover {
     width: 50%;
 }
 .employee-box .info > span {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: var(--secondary);
 }
 .employee-box .info > p {
     color: var(--gray);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     position: relative;
     padding: 0 2rem;
@@ -913,6 +938,7 @@ footer ul li a:hover {
 .our-history {
     gap: 2rem;
     color: #ffffff;
+    padding: 8rem 0;
 }
 .our-history-left,
 .our-history-right {
@@ -947,17 +973,17 @@ footer ul li a:hover {
 }
 .mission h3,
 .vision h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-bottom: 0.6rem;
 }
 .mission span,
 .vision span {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 .journey-box {
     gap: 2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 .journey-text-box,
 .journey-img-box {
@@ -1023,6 +1049,7 @@ footer ul li a:hover {
     background-blend-mode: multiply;
     color: #ffffff;
     text-align: center;
+    margin: 8rem 0;
 }
 .team-work > div {
     width: 50%;
@@ -1031,16 +1058,19 @@ footer ul li a:hover {
 }
 .team-work h1 {
     font-family: "Adelia", sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
     padding-bottom: 3rem;
 }
 .team-work > div > p {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* Member slider */
+.member-slider {
+    margin-bottom: 5rem;
+}
 .member-slider .item img {
     width: 100%;
     height: 100%;
@@ -1102,11 +1132,12 @@ footer ul li a:hover {
 
 .member-slider h3 {
     color: #ffff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
+    padding-bottom: 0.2rem;
 }
 .member-slider span {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 
@@ -1125,6 +1156,10 @@ footer ul li a:hover {
 }
 .board-slider span {
     color: var(--primary) !important;
+}
+.board-heading {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 /* Careers page */
 #careers .container {
@@ -1194,7 +1229,7 @@ footer ul li a:hover {
     padding: 2rem 1rem;
 }
 .job-content h4 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--secondary);
 }
@@ -1372,11 +1407,11 @@ footer ul li a:hover {
 }
 .counter h6 {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 .counter span {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 .platforms-work-with {
