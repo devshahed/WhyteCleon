@@ -7,9 +7,10 @@ const swiper2 = new Swiper(".home-slider", {
     slidesPerView: 1,
     spaceBetween: 0,
     effect: "fade",
+    speed: 2000,
     loop: true,
     autoplay: {
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
     },
 });

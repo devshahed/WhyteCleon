@@ -53,7 +53,7 @@ section {
     background: var(--primary);
     gap: 0.2rem;
     padding: 0.5rem 0.9rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: fit-content;
 }
 .btn-primary span {
@@ -62,18 +62,18 @@ section {
 
 /* Header part */
 nav {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 .logo img {
-    max-width: 130px;
+    max-width: 100px;
 }
 nav ul {
-    gap: 1.8rem;
+    gap: 1.5rem;
 }
 .nav-link,
 .header-phone-number,
 .why-whytecleon {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: var(--nav-link);
     padding: 0.3rem 0.9rem;
@@ -89,23 +89,23 @@ nav ul {
 }
 .header-phone-number {
     gap: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 .why-whytecleon {
     background: var(--primary);
     gap: 0.2rem;
     padding: 0.5rem 0.9rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-right: -1rem;
 }
 .country-flag {
     gap: 0.3rem;
 }
 .flag {
-    max-width: 2rem;
+    max-width: 1.5rem;
 }
 .flag-changer {
-    max-width: 1.5rem;
+    max-width: 1rem;
 }
 
 /* Employee page */
@@ -184,11 +184,11 @@ nav ul {
 /* Headings */
 .top-heading {
     color: var(--primary);
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 600;
-    letter-spacing: 0.1234rem;
+    letter-spacing: 0.12rem;
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
     align-items: center;
 }
 .top-heading::after {
@@ -198,7 +198,7 @@ nav ul {
     background: var(--primary);
 }
 .heading {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     padding: 0.5rem 0;
 }
@@ -213,7 +213,7 @@ nav ul {
     padding-bottom: 0.5rem;
 }
 .white-heading {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #ffffff;
 }
@@ -221,9 +221,9 @@ nav ul {
 /* Paragraph */
 .paragraph {
     color: var(--secondary);
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 1.5rem;
 }
 
 /* Footer */
@@ -235,10 +235,18 @@ footer {
 .left,
 .right,
 .left-top {
-    gap: 2rem;
+    gap: 1.2rem;
 }
-.footer-map img {
+.left-top > div:not(.about-whytecleon) {
+    flex: 1;
+}
+.footer-map {
+    margin-top: 1rem;
+}
+.footer-map iframe {
     width: 100%;
+    height: 100%;
+    border-radius: 1rem;
 }
 .about-whytecleon,
 .left {
@@ -250,19 +258,19 @@ footer {
     flex: 1;
 }
 .about-whytecleon img {
-    max-width: 13rem;
+    max-width: 8rem;
 }
 .about-whytecleon p span {
     color: var(--gray);
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
-    line-height: 1.8rem;
+    line-height: 1.4rem;
 }
 .about-whytecleon p a {
     color: var(--gray);
     font-weight: 700;
-    font-size: 0.85;
-    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    margin: 0.6rem 0;
 }
 .about-whytecleon p a:hover {
     transition: 0.3s ease-in-out;
@@ -273,7 +281,7 @@ footer ul {
 }
 footer ul li a {
     color: var(--light-gray);
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     font-weight: 700;
 }
 footer ul li a:hover {
@@ -283,27 +291,31 @@ footer ul li a:hover {
 .footer-heading {
     color: var(--light-dark);
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     padding: 1.5rem 0;
 }
-.insta-post {
+.footer-contact-text {
+    font-size: 0.8rem;
+}
+.embeded-post {
     flex-wrap: wrap;
     gap: 1rem;
 }
-.insta-post img,
-.insta-post iframe {
-    max-width: 7rem;
-    max-height: 7rem;
+.embeded-post img,
+.embeded-post iframe,
+.embeded-post blockquote {
+    max-width: 5rem;
+    max-height: 5rem;
     object-fit: cover;
 }
 .contact-info {
     gap: 1rem;
+    margin-top: 2rem;
 }
 .contact-info div {
     gap: 0.2rem;
 }
 .contact-info img {
-    margin-top: 0.4rem;
     margin-right: 0.4rem;
 }
 .line {
@@ -321,7 +333,7 @@ footer ul li a:hover {
 }
 .our-blog-heading {
     color: var(--secondary);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     padding-bottom: 2rem;
 }
@@ -379,14 +391,14 @@ footer ul li a:hover {
 .blog-info {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .blog-info-data img {
     width: 1rem;
 }
 .blog-info-data span {
     color: #474c52;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 700;
 }
 .blog-info-data {
@@ -395,18 +407,18 @@ footer ul li a:hover {
     gap: 0.4rem;
 }
 .blog-detail h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: var(--gray);
     line-height: 1.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 .blog-detail p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     color: var(--gray);
     text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
 }
 
 /* Pagination */
@@ -448,11 +460,14 @@ footer ul li a:hover {
 }
 
 /* Single blog */
+#single-blog .our-blog {
+    background: url("../images/single-blog-banner.png");
+}
 .blog-heading {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--light-dark);
-    padding-bottom: 1.5rem;
+    padding: 1rem 0;
 }
 .full-blog img {
     width: 100%;
@@ -599,12 +614,16 @@ footer ul li a:hover {
     padding-top: 3rem;
 }
 .wwc-card {
-    width: 30%;
+    flex: 1;
     text-align: center;
     background: #ffffff;
     box-shadow: 0px 19.6547px 46.329px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .wwc-card h4 {
     font-size: 1rem;
@@ -615,7 +634,7 @@ footer ul li a:hover {
 .wwc-card p {
     color: var(--gray);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 /* Volume */
@@ -1193,7 +1212,7 @@ footer ul li a:hover {
 
 /* Home page */
 #home .blogs {
-    padding-top: 0;
+    padding-top: 1rem;
 }
 .newsletter {
     background: url("../images/newsletter-bg.png"),
@@ -1201,9 +1220,11 @@ footer ul li a:hover {
     background-blend-mode: multiply;
     padding: 5rem 3rem;
     border-radius: 1rem;
+    margin: 6rem 0;
 }
+
 .newsletter-input-box {
-    width: 80%;
+    width: 50%;
     margin: auto;
     position: relative;
     padding: 1rem 0;
@@ -1232,27 +1253,32 @@ footer ul li a:hover {
     border-radius: 2rem;
     padding: 2rem 4rem;
     background: #ffffff;
-    margin: 4rem 0;
+    margin-bottom: 8rem;
+    margin-top: 6rem;
 }
 .assessment > div > h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: "Roboto Condensed", sans-serif;
+    padding-bottom: 0.5rem;
 }
 .assessment > div > p {
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
 }
 .assessment > div > a {
     border: 1px solid #006064;
     border-radius: 1rem;
-    padding: 1rem 3rem;
-    gap: 2rem;
-    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
     color: rgba(232, 37, 131, 0.62);
+}
+.assessment > div > a > img {
+    height: 0.9rem;
 }
 .review {
     background: rgba(232, 37, 131, 0.11);
@@ -1301,16 +1327,21 @@ footer ul li a:hover {
     font-weight: 900;
     color: var(--primary);
 }
+.hr-expertise {
+    margin: 8rem 0;
+}
 .hr-right h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
     color: #000000de;
 }
 .hr-right p {
-    font-size: 1.8rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-family: "Roboto", sans-serif;
     color: rgba(0, 0, 0, 0.87);
+    padding: 1.5rem 0;
 }
 .hr-expertise .btn-primary {
     font-weight: 400;
@@ -1331,9 +1362,13 @@ footer ul li a:hover {
 }
 .counters {
     gap: 2rem;
+    padding: 2rem 0;
 }
 .global {
     gap: 2rem;
+}
+.global .paragraph {
+    padding-top: 1.5rem;
 }
 .counter h6 {
     font-weight: 600;
@@ -1343,6 +1378,10 @@ footer ul li a:hover {
 .counter span {
     font-size: 2rem;
     font-weight: 600;
+}
+.platforms-work-with {
+    margin-bottom: 8rem;
+    margin-top: 2rem;
 }
 .platforms-work-with h2 {
     font-weight: 600;
@@ -1354,17 +1393,10 @@ footer ul li a:hover {
     gap: 3rem;
     padding: 2rem 0;
 }
-.active-solution {
-    background: linear-gradient(
-        143.6deg,
-        #e82583 -15.17%,
-        rgba(232, 37, 131, 0.59) 122.54%
-    );
+.home-wwc-box {
+    margin: 7rem 0;
 }
-.active-solution h4,
-.active-solution p {
-    color: #ffffff;
-}
+
 .wdbpcs h2 {
     color: var(--light-dark);
     font-weight: 600;
@@ -1375,8 +1407,9 @@ footer ul li a:hover {
 }
 .wdbpcs {
     gap: 2rem;
-    padding: 2rem 0;
+    padding-bottom: 8rem;
 }
+
 .wdbpcs > h2,
 .wdbpcs > p {
     flex: 1;
@@ -1414,6 +1447,33 @@ footer ul li a:hover {
     transform: translate(50%, -50%);
     z-index: -1;
 }
+#home .wwc-box {
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+.slider {
+    margin-bottom: 7rem;
+}
+#home .wwc-card {
+    height: 20rem;
+}
+.wwc-card img {
+    height: 4rem;
+    margin-bottom: 0.5rem;
+}
+#home .wwc-card:hover {
+    background: linear-gradient(
+        143.6deg,
+        #e82583 -15.17%,
+        rgba(232, 37, 131, 0.59) 122.54%
+    );
+}
+#home .wwc-card:hover h4,
+#home .wwc-card:hover p {
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
 .home-header {
     position: absolute;
     top: 0;
@@ -1426,13 +1486,15 @@ footer ul li a:hover {
 .home-slide {
     display: flex;
     align-items: center;
+    height: 90vh;
 }
 .home-wave {
     position: absolute;
     bottom: 0;
     z-index: 1;
+    pointer-events: none;
 }
-.badge{
+.badge {
     position: absolute;
     bottom: 0;
     right: 4rem;
@@ -1442,7 +1504,7 @@ footer ul li a:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 9rem 0;
+    padding: 8rem 0;
 }
 .home-slide .content h1 {
     font-family: "Adelia", sans-serif;
@@ -1457,14 +1519,15 @@ footer ul li a:hover {
     font-weight: 700;
     font-size: 2.5rem;
     color: var(--secondary);
-    padding: 1rem 0;
+    padding-top: 2rem;
 }
 .home-slide .content p {
     font-size: 1rem;
     font-weight: 500;
     color: var(--secondary);
     width: 50%;
-    padding-bottom: 1rem;
+    padding: 0.5rem 0 1.5rem 0;
+    line-height: 1.5rem;
 }
 .home-slide .content a {
     color: var(--primary);
@@ -1484,11 +1547,16 @@ footer ul li a:hover {
     z-index: -1;
 }
 .robust {
-    gap: 5rem;
+    gap: 7rem;
+    padding: 5rem 0;
 }
 .left-rbst img {
     width: 20rem;
     height: 20rem;
+}
+.right-rbst p {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 .mic {
     position: absolute;
