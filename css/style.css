@@ -315,6 +315,7 @@ footer ul li a:hover {
 .contact-info {
     gap: 1rem;
     margin-top: 2rem;
+    font-size: 0.8rem;
 }
 .contact-info div {
     gap: 0.2rem;
