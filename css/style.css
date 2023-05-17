@@ -982,6 +982,18 @@ footer ul li a:hover {
         #e82583 100%
     );
 }
+.home-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.52) 0%,
+        #e82583 100%
+    );
+}
 
 /* Team work */
 .team-work {
@@ -1317,57 +1329,61 @@ footer ul li a:hover {
 .hr-expertise .paragraph {
     color: var(--gray);
 }
-.counters{
+.counters {
     gap: 2rem;
 }
-.global{
+.global {
     gap: 2rem;
 }
-.counter h6{
+.counter h6 {
     font-weight: 600;
     font-size: 1rem;
     padding-bottom: 0.5rem;
 }
-.counter span{
+.counter span {
     font-size: 2rem;
     font-weight: 600;
 }
-.platforms-work-with h2{
+.platforms-work-with h2 {
     font-weight: 600;
     font-size: 2rem;
-    color: #1E1F4B;
+    color: #1e1f4b;
     text-align: center;
 }
-.platforms-work-with > div{
+.platforms-work-with > div {
     gap: 3rem;
     padding: 2rem 0;
 }
-.active-solution{
-    background: linear-gradient(143.6deg, #E82583 -15.17%, rgba(232, 37, 131, 0.59) 122.54%);
+.active-solution {
+    background: linear-gradient(
+        143.6deg,
+        #e82583 -15.17%,
+        rgba(232, 37, 131, 0.59) 122.54%
+    );
 }
-.active-solution h4, .active-solution p{
+.active-solution h4,
+.active-solution p {
     color: #ffffff;
 }
-.wdbpcs h2{
+.wdbpcs h2 {
     color: var(--light-dark);
     font-weight: 600;
     font-size: 2rem;
 }
-.wdbpcs .paragraph{
+.wdbpcs .paragraph {
     color: var(--gray);
 }
 .wdbpcs {
     gap: 2rem;
     padding: 2rem 0;
-
 }
-.wdbpcs > h2, .wdbpcs > p{
+.wdbpcs > h2,
+.wdbpcs > p {
     flex: 1;
 }
 #nigeria-map {
     stroke: var(--primary);
     fill: rgba(169, 228, 255, 0.26);
-    
 }
 #nigeria-map path:hover {
     fill: var(--primary);
@@ -1396,5 +1412,104 @@ footer ul li a:hover {
     right: 0;
     top: 0;
     transform: translate(50%, -50%);
+    z-index: -1;
+}
+.home-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.home-slider {
+    margin: unset !important;
+}
+.home-slide {
+    display: flex;
+    align-items: center;
+}
+.home-wave {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.badge{
+    position: absolute;
+    bottom: 0;
+    right: 4rem;
+    z-index: 1;
+}
+.home-slide .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 9rem 0;
+}
+.home-slide .content h1 {
+    font-family: "Adelia", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--secondary);
+}
+.home-slide .content h1:nth-child(1) {
+    padding-bottom: 3rem;
+}
+.home-slide .content h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--secondary);
+    padding: 1rem 0;
+}
+.home-slide .content p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary);
+    width: 50%;
+    padding-bottom: 1rem;
+}
+.home-slide .content a {
+    color: var(--primary);
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.home-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.robust {
+    gap: 5rem;
+}
+.left-rbst img {
+    width: 20rem;
+    height: 20rem;
+}
+.mic {
+    position: absolute;
+    width: 4rem !important;
+    height: 4rem !important;
+    left: -3rem;
+    top: 50%;
+    background: #ffffff;
+    z-index: 1;
+    border-radius: 50%;
+    padding: 1rem;
+}
+.circle {
+    position: absolute;
+    right: -4rem;
+    top: 0;
+    z-index: -1;
+}
+.circle2 {
+    position: absolute;
+    left: -3rem;
+    top: 0;
     z-index: -1;
 }
