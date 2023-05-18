@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 $(".rl-slider").owlCarousel({
     loop: true,
-    nav: true,
+    nav: false,
     dots: false,
     margin: 20,
     autoplay: true,
@@ -22,10 +22,10 @@ $(".rl-slider").owlCarousel({
     autoplayHoverPause: true,
     responsive: {
         0: {
-            items: 0.2,
+            items: 1,
         },
         600: {
-            items: 0.5,
+            items: 1,
         },
         1000: {
             items: 1,

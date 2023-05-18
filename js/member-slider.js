@@ -13,4 +13,15 @@ const swiper = new Swiper(".member-slider", {
         scale: 0.8,
         slideShadows: false,
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 4,
+        },
+    },
 });
